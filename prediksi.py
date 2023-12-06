@@ -37,7 +37,7 @@ if st.sidebar.button('Prediksi'):
     prediction = round(loaded_model.predict([[ram, inches, weight, ghz]])[0], 2)
     
     # Display the prediction result
-    st.sidebar.success(f'Prediksi harga laptop adalah: Rp.{prediction}')
+    st.sidebar.success(f'Hasil Prediksi harga laptop adalah: Rp.{prediction}')
 
 # Information and Tips Section
 st.subheader('Aplikasi ini membantu Anda memprediksi harga laptop berdasarkan beberapa fitur tertentu.')
